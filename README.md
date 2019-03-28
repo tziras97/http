@@ -1,10 +1,6 @@
-'use strict';
-
-const http = require('http');
-
-const ecstatic = require('../lib/ecstatic')({
-  root: `${__dirname}/public`,
-  showDir: true,
+const opts = {
+  root: path.join(__dirname, 'public'),
+  baseDir: '/',
   autoIndex: true,
 });
 
